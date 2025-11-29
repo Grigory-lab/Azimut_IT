@@ -69,7 +69,7 @@
     <title>Azimut IT</title>
     <link rel="stylesheet" href="main.css"> <!-- подключение css -->
 </head>
-<body>
+<body class="neon-bg3">
     <header class="header"> <!-- шапка сайта -->
         <div class="container header__content">
             <img src="img/logo.png" alt="Лого" width="100px" height="100px">
@@ -83,15 +83,18 @@
         </div>
     </header>
     <main class="main container-2">
-        <section class="account-info"> <!-- секция для информации о пользователе -->
+        <section class="account-info">
             <h1>Личный кабинет</h1>
-            <p>ФИО: <?php echo htmlspecialchars($client["Full_name"]); ?></p>
-            <p>Логин: <?php echo htmlspecialchars($client["Login"]); ?></p>
-            <p>Эл. почта: <?php echo htmlspecialchars($client["Mail"]); ?></p>
-            <p>Телефон: <?php echo htmlspecialchars($client["Phone_number"]); ?></p>
+            <div class="account-data">
+                <p>ФИО: <?php echo htmlspecialchars($client["Full_name"]); ?></p>
+                <p>Логин: <?php echo htmlspecialchars($client["Login"]); ?></p>
+                <p>Эл. почта: <?php echo htmlspecialchars($client["Mail"]); ?></p>
+                <p>Телефон: <?php echo htmlspecialchars($client["Phone_number"]); ?></p>
+
+            </div>
             <form method="post">
-                <button name="logout">Выйти из аккаунта</button> 
-            </form>                                   
+                <button class="finish" name="logout">Выйти из аккаунта</button>
+            </form>
         </section>
 
         <section class="standart-block accountp"> <!-- секция с формой записи -->

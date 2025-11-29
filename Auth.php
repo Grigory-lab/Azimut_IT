@@ -40,7 +40,7 @@
     <title>Azimut IT</title>
     <link rel="stylesheet" href="main.css"> <!-- подключение css -->
 </head>
-<body>
+<body class="neon-bg">
     <header class="header"> <!-- шапка сайта -->
         <div class="container header__content">
             <img src="img/logo.png" alt="Лого" width="100px" height="100px">
